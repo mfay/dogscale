@@ -1,0 +1,10 @@
+[Unit]
+Description = Dog Scale 
+
+[Service]
+Type=simple
+ExecStart=/opt/dogscale/start.sh
+EnvironmentFile=/opt/dogscale/config
+
+[Install]
+WantedBy=default.target
